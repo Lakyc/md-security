@@ -111,44 +111,39 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  if (contactForm) {
-    contactForm.addEventListener("submit", async (event) => {
-      event.preventDefault();
+  
+});
 
-      if (contactStatus) {
-        contactStatus.textContent = "Sending...";
-      }
+const contactForm = document.querySelector("[data-contact-form]");
+const contactStatus = document.querySelector("[data-contact-status]");
 
-      try {
-        const formData = new FormData(contactForm);
+contactForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
 
-        const response = await fetch(contactForm.action, {
-          method: "POST",
-          body: formData,
-          headers: {
-            Accept: "application/json"
-          }
-        });
+  contactStatus.textContent = "Sending...";
 
-        if (response.ok) {
-          if (contactStatus) {
-            contactStatus.textContent = "Message sent successfully.";
-          }
+  const formData = new FormData(contactForm);
 
-          contactForm.reset();
-        } else {
-          if (contactStatus) {
-            contactStatus.textContent = "Something went wrong. Please try again.";
-          }
-        }
-      } catch (error) {
-        if (contactStatus) {
-          contactStatus.textContent = "Network error. Please try again.";
-        }
-      }
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
     });
+
+    const result = await response.json();
+
+    if (result.success) {
+      contactStatus.textContent = "Message sent successfully.";
+      contactForm.reset();
+    } else {
+      contactStatus.textContent = "Something went wrong. Please try again.";
+    }
+  } catch (error) {
+    contactStatus.textContent = "Network error. Please try again.";
   }
 });
+
+
 
 //back to top
 document.addEventListener("DOMContentLoaded", () => {

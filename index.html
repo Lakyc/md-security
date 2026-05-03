@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MD Security</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/logo-md.png">
 
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" id="home">
   <nav class="main-menu" aria-label="Main navigation">
     <a href="index.html" class="logo" data-i18n="menu.logo"><img src="images/logo-md.png"></a>
 
@@ -95,7 +96,7 @@
       Our team combines experience and dedication to deliver solutions that fit your needs.
     </p>
 
-    <a href="#contact-us" class="about-button" data-i18n="about.button">Learn More</a>
+    <a href="#contact-us" data-contact-open class="about-button" data-i18n="about.button">Learn More</a>
   </div>
 
   <div class="about-image fade-sides-img">
@@ -260,7 +261,7 @@
         <a href="#services" data-i18n="menu.services">Services</a>
         <a href="#why-choose-us" data-i18n="menu.why_choose_us">Why Choose Us</a>
         <a href="#clients" data-i18n="menu.clients">Clients</a>
-        <a href="#contact-us" data-i18n="menu.contact_us">Contact Us</a>
+        <a href="#contact-us" data-contact-open data-i18n="menu.contact_us">Contact Us</a>
       </nav>
     </div>
 
@@ -292,7 +293,7 @@
         Contact us today and let us know how we can help with your next project.
       </p>
 
-      <a href="#contact-us" class="footer-button" data-i18n="footer.contact_button">Contact Us</a>
+      <a href="#contact-us" data-contact-open class="footer-button" data-i18n="footer.contact_button">Contact Us</a>
     </div>
   </div>
 
@@ -311,11 +312,12 @@
         <h2 id="contact-title" data-i18n="contact.title">Contact Us</h2>
 
         <form
-          class="contact-form"
+          class="contact-form form"
           data-contact-form
-          action="https://formspree.io/f/YOUR_FORM_ID"
+          action="https://api.web3forms.com/submit" 
           method="POST"
         >
+         <input type="hidden" name="access_key" value="526447d2-44d8-4349-9f24-c1b49b7517ab">
           <input type="text" name="name" placeholder="Your name" required data-i18n-placeholder="contact.name">
           <input type="email" name="email" placeholder="Your email" required data-i18n-placeholder="contact.email">
           <input type="text" name="subject" placeholder="Subject" required data-i18n-placeholder="contact.subject">
