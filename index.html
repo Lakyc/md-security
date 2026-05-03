@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MD Security</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+  <header class="site-header">
+  <nav class="main-menu" aria-label="Main navigation">
+    <a href="index.html" class="logo" data-i18n="menu.logo"><img src="images/logo-md.png"></a>
+
+    <ul class="menu-list">
+      <li><a href="#about-us" data-i18n="menu.about_us">About Us</a></li>
+      <li><a href="#services" data-i18n="menu.services">Services</a></li>
+      <li><a href="#why-choose-us" data-i18n="menu.why_choose_us">Why Choose Us</a></li>
+      <li><a href="#clients" data-i18n="menu.clients">Clients</a></li>
+      <li><a href="#contact-us" class="open-contact-popup" data-contact-open data-i18n="menu.contact_us">Contact Us</a></li>
+       <div class="lang-switch" role="group" aria-label="Language">
+    <button type="button" class="lang-switch__btn is-active" data-lang="en" aria-pressed="true">EN</button>
+    <button type="button" class="lang-switch__btn" data-lang="de" aria-pressed="false">DE</button>
+  </div>
+    </ul>
+  </nav>
+
+</header>
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero__media">
+        <img
+          class="hero__img"
+          src="images/hero.jpg"
+          alt="Modern glass facade at dusk, suggesting corporate discretion and controlled access."
+          width="1920"
+          height="1080"
+          loading="eager"
+          decoding="async"
+        >
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title" data-i18n="heroTitle">Discreet protection. Absolute focus.</h1>
+          <p class="hero__lead" data-i18n="heroLead">Close protection and risk management for principals who require trust, precision, and calm under pressure.</p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary open-contact-popup" data-contact-open data-i18n="heroBtnPrimary">Request consultation</a>
+            <a href="#services" class="btn btn--secondary" data-i18n="heroBtnSecondary">Our services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  <section class="feature-strip">
+  <div class="feature-item">
+    <div class="feature-icon" aria-hidden="true">★</div>
+    <div class="feature-content">
+      <h3 data-i18n="features.quality_title">Quality Service</h3>
+      <p data-i18n="features.quality_text">We deliver reliable solutions with attention to every detail.</p>
+    </div>
+  </div>
+
+  <div class="feature-item">
+    <div class="feature-icon" aria-hidden="true">✓</div>
+    <div class="feature-content">
+      <h3 data-i18n="features.experience_title">Experienced Team</h3>
+      <p data-i18n="features.experience_text">Our team brings knowledge and practical experience to every project.</p>
+    </div>
+  </div>
+
+  <div class="feature-item">
+    <div class="feature-icon" aria-hidden="true">↗</div>
+    <div class="feature-content">
+      <h3 data-i18n="features.growth_title">Business Growth</h3>
+      <p data-i18n="features.growth_text">We help clients improve, scale, and reach new opportunities.</p>
+    </div>
+  </div>
+
+  <div class="feature-item">
+    <div class="feature-icon" aria-hidden="true">☎</div>
+    <div class="feature-content">
+      <h3 data-i18n="features.support_title">Customer Support</h3>
+      <p data-i18n="features.support_text">We are available to answer questions and support your needs.</p>
+    </div>
+  </div>
+</section>
+    </section>
+<section class="about-section" id="about-us">
+  <div class="about-content">
+    <h2 data-i18n="about.title">About Us</h2>
+    <span class="about-line" aria-hidden="true"></span>
+
+    <p data-i18n="about.text">
+      We provide reliable services focused on quality, trust, and long-term client success.
+      Our team combines experience and dedication to deliver solutions that fit your needs.
+    </p>
+
+    <a href="#contact-us" class="about-button" data-i18n="about.button">Learn More</a>
+  </div>
+
+  <div class="about-image fade-sides-img">
+    <img src="images/about us.jpg" alt="About Us" data-i18n-alt="about.image_alt">
+  </div>
+</section>
+<section class="services-section" id="services">
+  <div class="section-title-row">
+    <span class="title-line" aria-hidden="true"></span>
+    <h2 data-i18n="services.title">Our Services</h2>
+    <span class="title-line" aria-hidden="true"></span>
+  </div>
+
+  <div class="services-grid">
+    <article class="service-card">
+      <div class="service-image">
+        <img src="images/service.png" alt="Service One" data-i18n-alt="services.service_1_alt">
+      </div>
+
+      <div class="service-icon" aria-hidden="true">⚙</div>
+
+      <div class="service-content">
+        <h3 data-i18n="services.service_1_title">Service One</h3>
+        <p data-i18n="services.service_1_text">
+          Short description about this service and how it helps your clients.
+        </p>
+      </div>
+    </article>
+
+    <article class="service-card">
+      <div class="service-image">
+        <img src="images/service.png" alt="Service Two" data-i18n-alt="services.service_2_alt">
+      </div>
+
+      <div class="service-icon" aria-hidden="true">✓</div>
+
+      <div class="service-content">
+        <h3 data-i18n="services.service_2_title">Service Two</h3>
+        <p data-i18n="services.service_2_text">
+          Short description about this service and how it helps your clients.
+        </p>
+      </div>
+    </article>
+
+    <article class="service-card">
+      <div class="service-image">
+        <img src="images/service.png" alt="Service Three" data-i18n-alt="services.service_3_alt">
+      </div>
+
+      <div class="service-icon" aria-hidden="true">★</div>
+
+      <div class="service-content">
+        <h3 data-i18n="services.service_3_title">Service Three</h3>
+        <p data-i18n="services.service_3_text">
+          Short description about this service and how it helps your clients.
+        </p>
+      </div>
+    </article>
+
+    <article class="service-card">
+      <div class="service-image">
+        <img src="images/service.png" alt="Service Four" data-i18n-alt="services.service_4_alt">
+      </div>
+
+      <div class="service-icon" aria-hidden="true">✦</div>
+
+      <div class="service-content">
+        <h3 data-i18n="services.service_4_title">Service Four</h3>
+        <p data-i18n="services.service_4_text">
+          Short description about this service and how it helps your clients.
+        </p>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="why-section" id="why-choose-us">
+  <div class="section-title-row">
+    <span class="title-line" aria-hidden="true"></span>
+    <h2 data-i18n="why.title">Why Choose Us</h2>
+    <span class="title-line" aria-hidden="true"></span>
+  </div>
+
+  <div class="why-grid">
+    <article class="why-item">
+      <div class="why-icon" aria-hidden="true">✓</div>
+      <div class="why-content">
+        <h3 data-i18n="why.item_1_title">Reliable Service</h3>
+        <p data-i18n="why.item_1_text">We provide dependable solutions with consistent quality and care.</p>
+      </div>
+    </article>
+
+    <article class="why-item">
+      <div class="why-icon" aria-hidden="true">★</div>
+      <div class="why-content">
+        <h3 data-i18n="why.item_2_title">Experienced Team</h3>
+        <p data-i18n="why.item_2_text">Our team brings practical knowledge and proven experience to every project.</p>
+      </div>
+    </article>
+
+    <article class="why-item">
+      <div class="why-icon" aria-hidden="true">⚙</div>
+      <div class="why-content">
+        <h3 data-i18n="why.item_3_title">Custom Solutions</h3>
+        <p data-i18n="why.item_3_text">We adapt our work to your goals, needs, and business priorities.</p>
+      </div>
+    </article>
+
+    <article class="why-item">
+      <div class="why-icon" aria-hidden="true">☎</div>
+      <div class="why-content">
+        <h3 data-i18n="why.item_4_title">Dedicated Support</h3>
+        <p data-i18n="why.item_4_text">We stay available, responsive, and focused on long-term client success.</p>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="clients-section" id="clients">
+  <div class="section-title-row">
+    <span class="title-line" aria-hidden="true"></span>
+    <h2 data-i18n="clients.title">Our Clients</h2>
+    <span class="title-line" aria-hidden="true"></span>
+  </div>
+
+  <div class="clients-grid">
+    <div class="client-logo">
+      <img src="images/client.png" alt="Client One" data-i18n-alt="clients.client_1_alt">
+    </div>
+
+    <div class="client-logo">
+      <img src="images/client.png" alt="Client Two" data-i18n-alt="clients.client_2_alt">
+    </div>
+
+    <div class="client-logo">
+      <img src="images/client.png" alt="Client Three" data-i18n-alt="clients.client_3_alt">
+    </div>
+
+    <div class="client-logo">
+      <img src="images/client.png" alt="Client Four" data-i18n-alt="clients.client_4_alt">
+    </div>
+
+    <div class="client-logo">
+      <img src="images/client.png" alt="Client Five" data-i18n-alt="clients.client_5_alt">
+    </div>
+
+    <div class="client-logo">
+      <img src="images/client.png" alt="Client Six" data-i18n-alt="clients.client_6_alt">
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-column footer-brand">
+      <a href="/" class="footer-logo" data-i18n="footer.logo">Logo</a>
+    </div>
+
+    <div class="footer-column">
+      <h3 data-i18n="footer.quick_links">Quick Links</h3>
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#home" data-i18n="menu.home">Home</a>
+        <a href="#about-us" data-i18n="menu.about_us">About Us</a>
+        <a href="#services" data-i18n="menu.services">Services</a>
+        <a href="#why-choose-us" data-i18n="menu.why_choose_us">Why Choose Us</a>
+        <a href="#clients" data-i18n="menu.clients">Clients</a>
+        <a href="#contact-us" data-i18n="menu.contact_us">Contact Us</a>
+      </nav>
+    </div>
+
+    <div class="footer-column">
+      <h3 data-i18n="footer.contact_title">Contact Us</h3>
+
+      <div class="footer-contact-list">
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon" aria-hidden="true">📍</span>
+          <p data-i18n="footer.address">Your address, City, Country</p>
+        </div>
+
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon" aria-hidden="true">☎</span>
+          <p data-i18n="footer.phone">+387 00 000 000</p>
+        </div>
+
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon" aria-hidden="true">✉</span>
+          <p data-i18n="footer.email">info@example.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h3 data-i18n="footer.get_in_touch_title">Get in Touch</h3>
+
+      <p data-i18n="footer.get_in_touch_text">
+        Contact us today and let us know how we can help with your next project.
+      </p>
+
+      <a href="#contact-us" class="footer-button" data-i18n="footer.contact_button">Contact Us</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p data-i18n="footer.copyright">© 2026 Your Company. All rights reserved.</p>
+  </div>
+</footer>
+<div class="contact-overlay" data-contact-overlay hidden>
+  <div class="contact-popup contact-popup-large" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+    <button class="contact-close" type="button" data-contact-close aria-label="Close contact form">
+      &times;
+    </button>
+
+    <div class="contact-popup-grid">
+      <div class="contact-form-side">
+        <h2 id="contact-title" data-i18n="contact.title">Contact Us</h2>
+
+        <form
+          class="contact-form"
+          data-contact-form
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+        >
+          <input type="text" name="name" placeholder="Your name" required data-i18n-placeholder="contact.name">
+          <input type="email" name="email" placeholder="Your email" required data-i18n-placeholder="contact.email">
+          <input type="text" name="subject" placeholder="Subject" required data-i18n-placeholder="contact.subject">
+          <textarea name="message" placeholder="Message" required data-i18n-placeholder="contact.message"></textarea>
+
+          <button type="submit" data-i18n="contact.submit">Send Message</button>
+
+          <p class="contact-status" data-contact-status></p>
+        </form>
+      </div>
+
+      <div class="contact-info-side">
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps?q=Sarajevo,Bosnia%20and%20Herzegovina&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Map location"
+            data-i18n-title="contact.map_title">
+          </iframe>
+        </div>
+
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <span class="contact-info-icon" aria-hidden="true">☎</span>
+            <p data-i18n="contact.phone">+387 00 000 000</p>
+          </div>
+
+          <div class="contact-info-item">
+            <span class="contact-info-icon" aria-hidden="true">✉</span>
+            <p data-i18n="contact.email_info">info@example.com</p>
+          </div>
+
+          <div class="contact-info-item">
+            <span class="contact-info-icon" aria-hidden="true">📍</span>
+            <p data-i18n="contact.location">Sarajevo, Bosnia and Herzegovina</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<button class="back-to-top" type="button" data-back-to-top aria-label="Back to top">
+  ↑
+</button>
+    
+  </main>
+
+  <!-- Content: services, about, why, contact -->
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
