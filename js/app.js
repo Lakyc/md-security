@@ -81,12 +81,21 @@ const translations = {
 
     // CLIENTS
     "clients.title": "OUR CLIENTS",
+    "testimonials.item_1_text": "Professional, calm, and extremely reliable. The team handled every detail with discretion and confidence.",
+    "testimonials.item_1_role": "Company Director",
+
+    "testimonials.item_2_text": "Their preparation and presence gave us complete peace of mind during a high-pressure business visit.",
+    "testimonials.item_2_role": "Private Client",
+
+    "testimonials.item_3_text": "Excellent communication, sharp planning, and flawless execution. We would gladly work with them again.",
+    "testimonials.item_3_role": "Event Organizer",
+
 
     // FOOTER
     "footer.quick_links": "QUICK LINKS",
     "footer.contact_title": "CONTACT",
-    "footer.address": "Europe-wide operations",
-    "footer.phone": "+49 1234 5678 90",
+    "footer.address": "Europe",
+    "footer.phone": "+49 176 82113875",
     "footer.email": "info@security-md.com",
 
     "footer.get_in_touch_title": "GET IN TOUCH",
@@ -104,13 +113,14 @@ const translations = {
     "contact.message": "Message",
     "contact.submit": "Send Request",
 
-    "contact.phone": "+49 1234 5678 90",
+    "contact.phone": "+49 176 82113875",
     "contact.email_info": "info@security-md.com",
     "contact.location": "Europe"
   },
 
   de: {
     // MENU
+    "menu.home": "STARTSEITE",
     "menu.about_us": "ÜBER UNS",
     "menu.services": "LEISTUNGEN",
     "menu.why_choose_us": "WARUM WIR",
@@ -187,12 +197,19 @@ const translations = {
 
     // CLIENTS
     "clients.title": "UNSERE KUNDEN",
+    "testimonials.item_1_text": "Professionell, ruhig und äußerst zuverlässig. Das Team kümmerte sich diskret und souverän um jedes Detail.",
+    "testimonials.item_1_role": "Geschäftsführer",
 
+    "testimonials.item_2_text": "Ihre Vorbereitung und Präsenz gaben uns während eines anspruchsvollen Geschäftsbesuchs vollständige Sicherheit.",
+    "testimonials.item_2_role": "Privatkunde",
+
+    "testimonials.item_3_text": "Ausgezeichnete Kommunikation, präzise Planung und reibungslose Umsetzung. Wir würden jederzeit wieder mit ihnen arbeiten.",
+    "testimonials.item_3_role": "Veranstalter",
     // FOOTER
     "footer.quick_links": "SCHNELLZUGRIFF",
     "footer.contact_title": "KONTAKT",
-    "footer.address": "Europaweit tätig",
-    "footer.phone": "+49 1234 5678 90",
+    "footer.address": "Europa",
+    "footer.phone": "+49 176 82113875",
     "footer.email": "info@security-md.com",
 
     "footer.get_in_touch_title": "KONTAKT AUFNEHMEN",
@@ -210,7 +227,7 @@ const translations = {
     "contact.message": "Nachricht",
     "contact.submit": "Anfrage senden",
 
-    "contact.phone": "+49 1234 5678 90",
+    "contact.phone": "+49 176 82113875",
     "contact.email_info": "info@security-md.com",
     "contact.location": "Europa"
   }
@@ -222,8 +239,17 @@ function applyLanguage(lang) {
 
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
+
     if (key && pack[key] != null) {
       el.textContent = pack[key];
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-placeholder");
+
+    if (key && pack[key] != null) {
+      el.setAttribute("placeholder", pack[key]);
     }
   });
 
